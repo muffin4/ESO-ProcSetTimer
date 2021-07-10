@@ -401,6 +401,14 @@ local scathingMage = { --190
   ["cooldown"] = 5000,
   ["origin"] = EPT_ORIGIN_DUNGEON,
 }
+
+local banisTorment = { --473
+  ["setName"] = GetSetName("|H1:item:157243:364:50:0:0:0:0:0:0:0:0:0:0:0:1:70:0:1:0:10000:0|h|h"),
+  ["abilityId"] = 133292, -- Major Maim
+  --["abilityId"] = 133318, -- Major Vitality
+  ["cooldown"] = 15000,
+  ["origin"] = EPT_ORIGIN_DUNGEON,
+}
 --------------
 -- Overland --
 --------------
@@ -568,6 +576,7 @@ function EPT.GetSetList()
     [347] = plagueSlinger,
     --[185] = spellPowerCure,
     [190] = scathingMage,
+    [473] = banisTorment,
 
     ----Overland
     [49]  = redMountain,
